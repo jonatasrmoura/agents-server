@@ -32,3 +32,15 @@ Content-Type: application/json
 # Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+
+# Create new question
+# @name createQuestion
+POST  {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+  "question": "O que é o ORM?",
+  "answer": "ORM são malipuladores de banco de dados no formato de código. ex: no javascript o PrismaIO e TypeORM"
+}
